@@ -1,0 +1,8 @@
+{
+  "name": "AGARWAL BURGS",
+  "description": "Bold Taste. Fresh Identity. Official FAQ assistant and brand showcase for Agarwal Burgs, a modern Indian non-alcoholic beverage concept.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

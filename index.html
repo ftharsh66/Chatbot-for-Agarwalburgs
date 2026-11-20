@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGARWAL BERG — Bold Taste. Fresh Identity.</title>
+    <meta
+      name="description"
+      content="Bold Taste. Fresh Identity. Official FAQ assistant and brand showcase for Agarwal Berg featuring Elephant, Smooth, and Danish Pilsner."
+    />
+    <meta property="og:title" content="AGARWAL BERG — Bold Taste. Fresh Identity." />
+    <meta
+      property="og:description"
+      content="Bold Taste. Fresh Identity. Official FAQ assistant and brand showcase for Agarwal Berg featuring Elephant, Smooth, and Danish Pilsner."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar (Strict 3-Zone Contract) -->
+    <header class="topbar" role="banner">
+      <!-- Zone 1: Single-line Brand Wordmark -->
+      <a href="#overview" class="brand-wordmark" data-nav-target="overview">
+        AGARWAL BERG
+      </a>
+
+      <!-- Zone 2: Concise Single-Line Navigation Links -->
+      <nav class="topnav" aria-label="Primary Navigation">
+        <a href="#overview" class="nav-link" data-nav-target="overview">Overview</a>
+        <a href="#collection" class="nav-link" data-nav-target="collection">Collection</a>
+        <a href="#story" class="nav-link" data-nav-target="story">Brand Story</a>
+        <a href="#contact" class="nav-link" data-nav-target="contact">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Single Primary Action (Optional Offline Guest Badge) -->
+      <div class="topbar-actions">
+        <button
+          type="button"
+          id="guestBadgeBtn"
+          class="btn-guest"
+          aria-haspopup="dialog"
+          aria-expanded="false"
+          aria-controls="guestModal"
+        >
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span id="guestBadgeLabel">Guest Badge</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile / Tablet View Switcher (Kept compact under 15% viewport height) -->
+    <div class="mobile-tabs" role="tablist" aria-label="Workspace View">
+      <button
+        type="button"
+        role="tab"
+        id="tabShowcase"
+        class="mobile-tab-btn"
+        aria-selected="false"
+        data-view="showcase"
+      >
+        Brand Showcase
+      </button>
+      <button
+        type="button"
+        role="tab"
+        id="tabChat"
+        class="mobile-tab-btn is-active"
+        aria-selected="true"
+        data-view="chat"
+      >
+        FAQ Assistant
+      </button>
+    </div>
+
+    <!-- Split-Screen Application Shell -->
+    <main class="split-layout" id="appShell" data-mobile-view="chat">
+      <!-- LEFT PANEL: Editorial Brand Showcase -->
+      <section class="showcase-panel" id="showcasePanel" aria-label="Brand Showcase">
+        <div class="showcase-inner">
+          <!-- 01. Overview & Hero -->
+          <section id="overview" class="hero-block">
+            <p class="eyebrow-text">Indian Craft &amp; Danish Brewing Heritage</p>
+            <h1 class="hero-title">Bold Taste. Fresh Identity.</h1>
+            <p class="hero-lead">
+              Agarwal Berg pairs modern Indian beverage branding with classic European brewing craft. Explore our three signature beers—Elephant, Smooth, and Danish Pilsner—or ask our virtual assistant anything.
+            </p>
+
+            <div class="hero-actions">
+              <button type="button" id="heroAskBtn" class="btn-primary">
+                Ask Brand Assistant
+              </button>
+              <a href="#collection" class="btn-secondary" data-nav-target="collection">
+                Explore Collection
+              </a>
+            </div>
+
+            <!-- Bespoke Studio Hero Composition (Zero External URLs, Offline Ready) -->
+            <figure class="hero-visual" aria-label="Agarwal Berg Signature Trio Studio Showcase">
+              <svg
+                class="hero-svg"
+                viewBox="0 0 800 420"
+                role="img"
+                aria-label="Three dark smoked glass Agarwal Berg bottles with brushed gold labels on a black basalt plinth"
+              >
+                <defs>
+                  <radialGradient id="heroGlow" cx="50%" cy="44%" r="55%">
+                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.24" />
+                    <stop offset="55%" stop-color="#8A6B1C" stop-opacity="0.08" />
+                    <stop offset="100%" stop-color="#0C0C0F" stop-opacity="0" />
+                  </radialGradient>
+                  <linearGradient id="glassBody" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0E0E12" />
+                    <stop offset="28%" stop-color="#222229" />
+                    <stop offset="55%" stop-color="#141418" />
+                    <stop offset="85%" stop-color="#2B271E" />
+                    <stop offset="100%" stop-color="#0B0B0E" />
+                  </linearGradient>
+                  <linearGradient id="goldLabel" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#E7CA6E" />
+                    <stop offset="48%" stop-color="#C8A033" />
+                    <stop offset="100%" stop-color="#9A7820" />
+                  </linearGradient>
+                  <linearGradient id="plinthTop" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1C1C22" />
+                    <stop offset="100%" stop-color="#101014" />
+                  </linearGradient>
+                </defs>
+
+                <rect width="800" height="420" fill="#0E0E11" />
+                <rect width="800" height="420" fill="url(#heroGlow)" />
+
+                <!-- Subtle Architectural Arch -->
+                <path
+                  d="M210 350 L210 155 A190 190 0 0 1 590 155 L590 350"
+                  fill="none"
+                  stroke="#D4AF37"
+                  stroke-opacity="0.14"
+                  stroke-width="1"
+                />
+
+                <!-- Basalt Plinth -->
+                <rect x="130" y="340" width="540" height="22" rx="3" fill="url(#plinthTop)" stroke="#2A2A33" stroke-width="1" />
+                <rect x="155" y="362" width="490" height="36" fill="#09090B" />
+
+                <!-- Left Bottle: Agarwal Berg Elephant -->
+                <g transform="translate(222, 118)">
+                  <rect x="33" y="0" width="24" height="16" rx="2" fill="url(#goldLabel)" />
+                  <path d="M35 16 L55 16 L58 58 C72 68 80 82 80 100 L80 218 C80 223 76 226 70 226 L20 226 C14 226 10 223 10 218 L10 100 C10 82 18 68 32 58 Z" fill="url(#glassBody)" stroke="#38342A" stroke-width="1" />
+                  <rect x="16" y="116" width="58" height="72" rx="2" fill="#111115" stroke="#D4AF37" stroke-opacity="0.55" stroke-width="1" />
+                  <rect x="22" y="122" width="46" height="2" fill="url(#goldLabel)" />
+                  <text x="45" y="148" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="8.5" font-weight="700" letter-spacing="1">ELEPHANT</text>
+                  <text x="45" y="161" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="6" letter-spacing="1.4">STRONG BOCK</text>
+                  <text x="45" y="178" text-anchor="middle" fill="#A8A095" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="0.8">7.2% ABV · INDIA</text>
+                </g>
+
+                <!-- Center Hero Bottle: Agarwal Berg Danish Pilsner -->
+                <g transform="translate(350, 78)">
+                  <rect x="37" y="0" width="26" height="18" rx="2" fill="url(#goldLabel)" />
+                  <path d="M39 18 L61 18 L65 68 C82 80 90 96 90 116 L90 256 C90 262 85 266 78 266 L22 266 C15 266 10 262 10 256 L10 116 C10 96 18 80 35 68 Z" fill="url(#glassBody)" stroke="#55492B" stroke-width="1.2" />
+                  <rect x="17" y="132" width="66" height="86" rx="2" fill="url(#goldLabel)" />
+                  <rect x="22" y="137" width="56" height="76" rx="1" fill="#101013" />
+                  <text x="50" y="163" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" font-weight="600" letter-spacing="1.4">AGARWAL BERG</text>
+                  <line x1="32" y1="170" x2="68" y2="170" stroke="#D4AF37" stroke-opacity="0.45" stroke-width="0.8" />
+                  <text x="50" y="185" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="10" font-weight="700" letter-spacing="1">DANISH</text>
+                  <text x="50" y="198" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" letter-spacing="1.6">PILSNER</text>
+                  <text x="50" y="209" text-anchor="middle" fill="#A8A095" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="0.8">5% ABV · EST. 1904</text>
+                </g>
+
+                <!-- Right Bottle: Agarwal Berg Smooth -->
+                <g transform="translate(488, 118)">
+                  <rect x="33" y="0" width="24" height="16" rx="2" fill="url(#goldLabel)" />
+                  <path d="M35 16 L55 16 L58 58 C72 68 80 82 80 100 L80 218 C80 223 76 226 70 226 L20 226 C14 226 10 223 10 218 L10 100 C10 82 18 68 32 58 Z" fill="url(#glassBody)" stroke="#38342A" stroke-width="1" />
+                  <rect x="16" y="116" width="58" height="72" rx="2" fill="#111115" stroke="#D4AF37" stroke-opacity="0.55" stroke-width="1" />
+                  <rect x="22" y="122" width="46" height="2" fill="url(#goldLabel)" />
+                  <text x="45" y="148" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="9" font-weight="700" letter-spacing="1.2">SMOOTH</text>
+                  <text x="45" y="161" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="6" letter-spacing="1.4">PALE LAGER</text>
+                  <text x="45" y="178" text-anchor="middle" fill="#A8A095" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="0.8">4.5–5% ABV · INDIA</text>
+                </g>
+              </svg>
+              <figcaption class="hero-caption">
+                Signature Collection · Elephant (7–7.2%) · Smooth (4.5–5%) · Danish Pilsner (5%)
+              </figcaption>
+            </figure>
+          </section>
+
+          <!-- 02. Three Signature Beverage Varieties -->
+          <section id="collection" class="showcase-section">
+            <div class="section-header">
+              <p class="section-index">01. Signature Collection</p>
+              <h2 class="section-title">Three Signature Varieties</h2>
+              <p class="section-subtitle">
+                From a bold 7%–7.2% strong bock to an approachable Indian-tailored pale lager and our flagship 1904 Danish pilsner.
+              </p>
+            </div>
+
+            <div class="flavour-grid">
+              <!-- Drink Card 1: Agarwal Berg Elephant -->
+              <article class="flavour-card">
+                <div class="flavour-media" aria-hidden="true">
+                  <svg viewBox="0 0 320 240" class="flavour-svg">
+                    <defs>
+                      <radialGradient id="glow1" cx="50%" cy="50%" r="55%">
+                        <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.28" />
+                        <stop offset="100%" stop-color="#131317" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                    <rect width="320" height="240" fill="#131317" />
+                    <rect width="320" height="240" fill="url(#glow1)" />
+                    <circle cx="160" cy="126" r="70" fill="none" stroke="#D4AF37" stroke-opacity="0.18" stroke-width="1" />
+                    <g transform="translate(122, 34)">
+                      <rect x="27" y="0" width="22" height="14" rx="2" fill="#D4AF37" />
+                      <path d="M29 14 L47 14 L50 48 C62 56 68 68 68 84 L68 172 C68 176 64 179 59 179 L17 179 C12 179 8 176 8 172 L8 84 C8 68 14 56 26 48 Z" fill="#1A1A20" stroke="#4D4228" stroke-width="1" />
+                      <rect x="14" y="96" width="48" height="56" rx="2" fill="#0F0F13" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="1" />
+                      <text x="38" y="120" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="8" font-weight="700">ELEPHANT</text>
+                      <text x="38" y="133" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="1.2">7.2% ABV</text>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flavour-body">
+                  <div class="flavour-meta">
+                    <span>01</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Strong Lager / Bock</span>
+                    <span aria-hidden="true">·</span>
+                    <span>7%–7.2% ABV</span>
+                  </div>
+                  <h3 class="flavour-name">Agarwal Berg Elephant</h3>
+                  <dl class="flavour-specs">
+                    <div class="spec-row">
+                      <dt>ABV</dt>
+                      <dd>Around 7% to 7.2% (varying slightly by regional bottling)</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Flavor Profile</dt>
+                      <dd>Pale golden color with a rich malty character, a hint of caramel, and a dry, balanced hop bitterness.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Name Origin</dt>
+                      <dd>Named after the iconic Elephant Gate at the historic Carlsberg Brewery in Copenhagen, Denmark, which features four granite elephants.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Availability in India</dt>
+                      <dd>Relaunched by Agarwal Berg India in 500ml cans, 330ml bottles, and 650ml bottles (~₹190–₹200 MRP set by state governments).</dd>
+                    </div>
+                  </dl>
+                  <button
+                    type="button"
+                    class="flavour-ask-btn"
+                    data-ask-question="Tell me about Agarwal Berg Elephant."
+                  >
+                    Ask About Elephant
+                  </button>
+                </div>
+              </article>
+
+              <!-- Drink Card 2: Agarwal Berg Smooth -->
+              <article class="flavour-card">
+                <div class="flavour-media" aria-hidden="true">
+                  <svg viewBox="0 0 320 240" class="flavour-svg">
+                    <defs>
+                      <radialGradient id="glow2" cx="50%" cy="50%" r="55%">
+                        <stop offset="0%" stop-color="#C8A033" stop-opacity="0.22" />
+                        <stop offset="100%" stop-color="#131317" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                    <rect width="320" height="240" fill="#131317" />
+                    <rect width="320" height="240" fill="url(#glow2)" />
+                    <circle cx="160" cy="126" r="70" fill="none" stroke="#D4AF37" stroke-opacity="0.18" stroke-width="1" />
+                    <g transform="translate(122, 34)">
+                      <rect x="27" y="0" width="22" height="14" rx="2" fill="#D4AF37" />
+                      <path d="M29 14 L47 14 L50 48 C62 56 68 68 68 84 L68 172 C68 176 64 179 59 179 L17 179 C12 179 8 176 8 172 L8 84 C8 68 14 56 26 48 Z" fill="#1A1A20" stroke="#55492B" stroke-width="1" />
+                      <rect x="14" y="96" width="48" height="56" rx="2" fill="#0F0F13" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="1" />
+                      <text x="38" y="120" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="8.5" font-weight="700">SMOOTH</text>
+                      <text x="38" y="133" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="1.2">4.5–5% ABV</text>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flavour-body">
+                  <div class="flavour-meta">
+                    <span>02</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Pale Lager / Smooth Pilsner</span>
+                    <span aria-hidden="true">·</span>
+                    <span>4.5%–5% ABV</span>
+                  </div>
+                  <h3 class="flavour-name">Agarwal Berg Smooth</h3>
+                  <p class="flavour-desc">
+                    Brewed in India by Agarwal Berg India, tailored to local preferences for a milder, more sessionable beer compared to traditional European lagers.
+                  </p>
+                  <dl class="flavour-specs">
+                    <div class="spec-row">
+                      <dt>ABV</dt>
+                      <dd>Around 4.5% to 5% ABV depending on bottling and state regulations.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Flavor Profile</dt>
+                      <dd>Aromas of malt, grains, and floral hops with a smooth, creamy texture, light-to-medium body, and a clean, gentle finish.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Available Sizes</dt>
+                      <dd>330ml bottles, 500ml cans, and 650ml bottles.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Food Pairings</dt>
+                      <dd>Fried, salty, or spicy foods like burgers, hot wings, potato chips, and roasted peanuts.</dd>
+                    </div>
+                  </dl>
+                  <button
+                    type="button"
+                    class="flavour-ask-btn"
+                    data-ask-question="Tell me about Agarwal Berg Smooth."
+                  >
+                    Ask About Smooth
+                  </button>
+                </div>
+              </article>
+
+              <!-- Drink Card 3: Agarwal Berg Danish Pilsner -->
+              <article class="flavour-card">
+                <div class="flavour-media" aria-hidden="true">
+                  <svg viewBox="0 0 320 240" class="flavour-svg">
+                    <defs>
+                      <radialGradient id="glow3" cx="50%" cy="50%" r="55%">
+                        <stop offset="0%" stop-color="#8DA36E" stop-opacity="0.22" />
+                        <stop offset="100%" stop-color="#131317" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                    <rect width="320" height="240" fill="#131317" />
+                    <rect width="320" height="240" fill="url(#glow3)" />
+                    <circle cx="160" cy="126" r="70" fill="none" stroke="#D4AF37" stroke-opacity="0.18" stroke-width="1" />
+                    <g transform="translate(122, 34)">
+                      <rect x="27" y="0" width="22" height="14" rx="2" fill="#D4AF37" />
+                      <path d="M29 14 L47 14 L50 48 C62 56 68 68 68 84 L68 172 C68 176 64 179 59 179 L17 179 C12 179 8 176 8 172 L8 84 C8 68 14 56 26 48 Z" fill="#1A1A20" stroke="#3F4733" stroke-width="1" />
+                      <rect x="14" y="96" width="48" height="56" rx="2" fill="#0F0F13" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="1" />
+                      <text x="38" y="120" text-anchor="middle" fill="#F5EFE6" font-family="Playfair Display, Georgia, serif" font-size="8" font-weight="700">DANISH</text>
+                      <text x="38" y="133" text-anchor="middle" fill="#D4AF37" font-family="Plus Jakarta Sans, sans-serif" font-size="5.5" letter-spacing="1.2">5% PILSNER</text>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flavour-body">
+                  <div class="flavour-meta">
+                    <span>03</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Danish Pilsner / Pale Lager</span>
+                    <span aria-hidden="true">·</span>
+                    <span>5% ABV</span>
+                  </div>
+                  <h3 class="flavour-name">Agarwal Berg Danish Pilsner</h3>
+                  <p class="flavour-desc">
+                    Flagship 5% ABV pale pilsner beer (adjusted to 3.4% or 3.8% in regions like the UK due to local tax laws).
+                  </p>
+                  <dl class="flavour-specs">
+                    <div class="spec-row">
+                      <dt>ABV</dt>
+                      <dd>5% (standard globally, including India).</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Flavor &amp; Aroma</dt>
+                      <dd>Crisp and refreshing with gentle malt sweetness, a light biscuit grain bill, and distinctive herbal or citrus hop aromas.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Ingredients</dt>
+                      <dd>Water, barley malt, barley, and quality hop varieties.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt>Origin &amp; History</dt>
+                      <dd>Originally brewed in Denmark by J.C. Jacobsen's son, Carl Jacobsen, in 1904.</dd>
+                    </div>
+                  </dl>
+                  <button
+                    type="button"
+                    class="flavour-ask-btn"
+                    data-ask-question="Tell me about Agarwal Berg Danish Pilsner."
+                  >
+                    Ask About Pilsner
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- 03. Brand Story -->
+          <section id="story" class="showcase-section story-section">
+            <div class="section-header">
+              <p class="section-index">02. Brand Identity</p>
+              <h2 class="section-title">A Fresh Approach to Indian Craft</h2>
+            </div>
+
+            <div class="story-grid">
+              <div class="story-copy">
+                <p>
+                  Created as a digital business and marketing concept, Agarwal Berg brings together distinctive dark-and-gold presentation, heritage brewing storytelling, and instant, reliable digital customer care.
+                </p>
+                <div class="story-actions">
+                  <button
+                    type="button"
+                    class="btn-secondary"
+                    data-ask-question="Tell me about your brand."
+                  >
+                    Ask About Our Brand
+                  </button>
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-ask-question="What makes Agarwal Berg different?"
+                  >
+                    What makes us different?
+                  </button>
+                </div>
+              </div>
+
+              <dl class="brand-pillars">
+                <div class="pillar-item">
+                  <dt>Distinctive Identity</dt>
+                  <dd>Dark charcoal aesthetic anchored by cream typography and brushed gold accents.</dd>
+                </div>
+                <div class="pillar-item">
+                  <dt>Offline-First FAQ Engine</dt>
+                  <dd>100% locally matched answers with zero external dependencies or hallucination risk.</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+
+          <!-- 04. Contact & Instagram Demonstration Section -->
+          <section id="contact" class="showcase-section contact-section">
+            <div class="section-header">
+              <p class="section-index">03. Connect</p>
+              <h2 class="section-title">Contact &amp; Social Channels</h2>
+              <p class="section-subtitle">
+                Reach the Agarwal Berg demonstration team via our website contact channels or explore our visual brand identity on Instagram.
+              </p>
+            </div>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <p class="contact-kicker">Official Demonstration Desk</p>
+                <p class="contact-value">hello@agarwalberg.demo</p>
+                <div class="contact-card-actions">
+                  <button type="button" id="copyEmailBtn" class="btn-secondary">
+                    Copy Demo Email
+                  </button>
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-ask-question="How can I contact you?"
+                  >
+                    Ask Contact FAQ
+                  </button>
+                </div>
+                <p id="copyFeedback" class="copy-feedback" role="status" aria-live="polite"></p>
+              </div>
+
+              <div class="contact-card">
+                <p class="contact-kicker">Instagram Brand Showcase</p>
+                <p class="contact-value">@_agarwalbergs_</p>
+                <div class="contact-card-actions">
+                  <a
+                    href="https://www.instagram.com/_agarwalbergs_?hvrq=MWEzbmdsa2R2eTEwOQ=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                  >
+                    Visit Instagram Page
+                  </a>
+                  <button
+                    type="button"
+                    class="btn-link"
+                    data-ask-question="Can I follow Agarwal Berg on Instagram?"
+                  >
+                    Ask Instagram FAQ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quiet Editorial Footer -->
+          <footer class="showcase-footer">
+            <span>AGARWAL BERG</span>
+            <span aria-hidden="true">·</span>
+            <span>Bold Taste. Fresh Identity.</span>
+            <span aria-hidden="true">·</span>
+            <span>Academic Digital Brand Concept</span>
+          </footer>
+        </div>
+      </section>
+
+      <!-- RIGHT PANEL: Live FAQ Chatbot Workspace -->
+      <aside class="chat-panel" id="chatPanel" aria-label="Agarwal Berg FAQ Assistant">
+        <div class="chat-shell">
+          <!-- Compact Brand Chat Header -->
+          <div class="chat-header">
+            <div class="chat-brand">
+              <div class="chat-monogram" aria-hidden="true">AB</div>
+              <div class="chat-brand-text">
+                <h2 class="chat-title">AGARWAL BERG</h2>
+                <p class="chat-subtitle">Virtual Brand Assistant</p>
+              </div>
+            </div>
+
+            <div class="chat-controls">
+              <button
+                type="button"
+                id="restartChatBtn"
+                class="chat-control-btn"
+                title="Restart conversation"
+              >
+                Restart
+              </button>
+              <button
+                type="button"
+                id="clearChatBtn"
+                class="chat-control-btn"
+                title="Clear chat history"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+
+          <!-- Scrollable Conversation Feed -->
+          <div
+            id="chatMessages"
+            class="chat-messages"
+            role="log"
+            aria-live="polite"
+            aria-label="Conversation history"
+          ></div>
+
+          <!-- Typing Indicator (Hidden by default) -->
+          <div id="typingIndicator" class="typing-row" hidden aria-live="polite">
+            <div class="typing-bubble" aria-label="Assistant is typing">
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+            </div>
+          </div>
+
+          <!-- Friendly Inline Validation / Status Banner -->
+          <p id="chatError" class="chat-error" role="alert" hidden></p>
+
+          <!-- Chat Composer Form -->
+          <form id="chatForm" class="chat-composer" novalidate>
+            <label for="chatInput" class="sr-only">Ask a question about Agarwal Berg</label>
+            <input
+              id="chatInput"
+              type="text"
+              class="chat-input"
+              placeholder="Ask about our brand, products, or contact info..."
+              autocomplete="off"
+              maxlength="240"
+            />
+            <button type="submit" id="sendBtn" class="btn-send" aria-label="Send message">
+              <span>Send</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Optional Offline Guest Name Badge Dialog -->
+    <div id="guestModalBackdrop" class="modal-backdrop" hidden>
+      <div
+        id="guestModal"
+        class="guest-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="guestModalTitle"
+      >
+        <div class="modal-header">
+          <h2 id="guestModalTitle" class="modal-title">Guest Badge</h2>
+          <button
+            type="button"
+            id="closeGuestModalBtn"
+            class="modal-close-btn"
+            aria-label="Close Guest Badge dialog"
+          >
+            &times;
+          </button>
+        </div>
+        <p class="modal-desc">
+          Optionally set a display name for this offline session. Your badge is saved only in your browser.
+        </p>
+        <form id="guestForm" class="modal-form" novalidate>
+          <label for="guestNameInput" class="modal-label">Visitor Name</label>
+          <input
+            id="guestNameInput"
+            type="text"
+            class="modal-input"
+            placeholder="e.g. Aarav"
+            maxlength="28"
+            autocomplete="off"
+          />
+          <p id="guestFormError" class="modal-error" role="alert" hidden></p>
+          <div class="modal-actions">
+            <button type="button" id="clearGuestBtn" class="btn-secondary">
+              Remove Badge
+            </button>
+            <button type="submit" class="btn-primary">
+              Save Badge
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
